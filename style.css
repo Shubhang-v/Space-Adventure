@@ -1,0 +1,105 @@
+@keyframes play{
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+}
+#play
+{
+    width: 10%;
+    height: 5%;
+    border:ridge;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: x-large;
+    text-decoration: none;
+    animation: play 0.8s linear infinite;
+    animation-name: play; 
+    animation-direction: alternate;
+}
+
+h1
+{
+    font-size:xx-large;
+    background: -webkit-linear-gradient(White, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    margin: 20px  5px 0;
+    animation: move 0.8s linear infinite;
+    animation-name: move;
+    animation-direction: alternate-reverse;
+}
+@keyframes move{
+    from {
+      transform: translateX(-7px);
+    }
+    to {
+      transform: translateX(7px);
+    }
+}
+
+hr
+{
+    height: 10px;
+    width: 30%;
+    margin: 10px 0  20px 0;
+}
+canvas
+{
+    border: ridge;
+    border-width: 10px;
+    visibility:hidden;
+}
+body
+{
+    background-image: url(background.png);
+
+}
+#ship
+{
+    position: 100,100;
+    visibility: hidden;
+}
+#score{
+    font-size: x-large;
+    background: -webkit-linear-gradient(red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#bg_img
+{   
+    visibility: hidden;
+}
+.meteor
+{
+    visibility: hidden;
+}
+#gameOver
+{
+    visibility: hidden;
+}
+#reload
+{
+
+    width: 10%;
+    height: 5%;
+    border:ridge;
+    border-width: 2px;
+    border-radius: 15px;
+    font-size: x-large;
+    text-decoration: none;
+    animation: play 0.8s linear infinite;
+    animation-name: play; 
+    animation-direction: alternate;
+    visibility: hidden;
+}
+#highScore
+{
+    font-size: x-large;
+    background: -webkit-linear-gradient(red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

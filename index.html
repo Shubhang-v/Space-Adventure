@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space Adventure</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body id="body" onload="load()">
+        <center>
+            
+            <h1><B>Space Adventure</B></h1>
+            <hr id="rule">
+                <div>
+              <h2 id="score"><b></b></h2>
+                    
+                <button onclick="Play()" id="play" class="btn btn-info form-control"><b>Play</b></button>
+            </div>
+           <div>
+            <canvas id="myCanvas" width="600" height="450"></canvas>
+        </div>
+        </center>
+        <img src="space_ship.png" id="ship">
+        <img id="bg_img" src="bg.png" height="5" width="5">
+        <img id="meteor_img" class="meteor" src="meteor.png">
+        <br>
+        <center>
+            <img id="gameOver" src="gameOver.png">
+            <br><br><br>
+            
+            <button id="reload" onclick="reload(),window.location.reload()" class="btn btn-info form-control">Reload</button> 
+        </center>
+    </body>
+    <script src="main.js"></script>
+</html>
